@@ -1,0 +1,112 @@
+.header{
+    border-bottom: 1px solid $grayColor;
+    overflow: hidden;
+    padding: 20px 0;
+    .logo{
+        overflow: hidden;
+        @media #{$max-mobile} {
+            width: 70%;
+            float: $float-l;
+         }
+        @media #{$min-small} {
+            float: none;
+            text-align: center;
+            width:100%
+        }
+        @media #{$min-medium} {
+            float: $float-l;
+        width:30%;
+        text-align: left;
+        }
+        h1{
+margin-top: 6px;
+        }
+        p{
+
+        }
+    }
+    .nav{
+       
+        overflow:hidden ;
+        list-style: none;
+        border-radius: 10px;
+        background-color: $redColor;
+    
+        @include prefixer(transition,2s,webkit);
+         @media #{$max-mobile} {
+           display: none;
+    
+        }
+        &.clicked {
+            @media #{$max-mobile} {
+                display: block;
+  
+    float: right;
+    margin-top: 0px;
+    margin-top: -38px;
+    background-color: black;
+    text-align: left;
+    padding-left: 5px;
+   
+            }
+        }
+        @media #{$min-small} {
+            float: none;
+            text-align: center;
+            width:100%
+        }
+        @media #{$min-medium} {
+            width:70%;
+            float: $float-l;
+        }
+        li{
+float: left;
+text-align: center;
+font-size: 18px;
+width:20%;
+@media #{$max-mobile} {
+    float:none;
+    display: block;
+}
+          a {
+text-decoration: none;
+text-transform: uppercase;
+color: #ddd;
+display: block;
+padding: 15px;
+&:hover{
+    color:$grayColor;
+}
+          }
+        }
+    }
+    .toggle{
+        width: 50%;
+    display: none;
+    
+    padding: 5px;
+    float: $float-l;
+    margin-top: 20px;
+    @media #{$max-mobile} {
+        display: block;
+        width:30%; 
+     }
+     i{
+        display: block;
+        font-size: 30px;
+        text-align: $text-r;
+        cursor: pointer;
+        position: relative;
+      &.clicked::after{
+        border-width: 8px;
+    border-color: black transparent transparent;
+    border-style: solid;
+    content: "";
+    position: absolute;
+    right: 5px;
+    top: 74%;
+}
+      }
+     }
+    }
+

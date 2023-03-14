@@ -1,0 +1,10 @@
+*{
+   @include prefixer(box-sizing,border-box,webkit moz);
+}
+body{
+    background-color: #f6f6f6;
+    font:{
+         family:Tahoma;
+         size:15px;
+    }
+}

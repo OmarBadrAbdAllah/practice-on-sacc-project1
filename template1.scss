@@ -1,0 +1,18 @@
+//desin is main file that are compiled to css;
+// when we call file we have to order this file as the following;
+// firest helper that are file contain tools that we use in style as function variable an so on;
+// scecond is not important as the first we can put compent wich is part of website that show to user as button;
+//thirde layout is contain style of fixd components that show in every page in website;
+//forth tha pages ;  
+@import './scssb/helpers/var';
+@import './scssb/helpers/mixin';
+@import './scssb/helpers/func';
+@import './scssb/pages/glopal';
+@import'./scssb/component/button' ;
+@import './scssb/component/headings';
+@import'./scssb/layout/header' ;
+@import'./scssb/layout/grid';
+@import'./scssb/layout/footer' ;
+@import'./scssb/pages/template1.scss';
+
+@import './scssb/component/button' ;

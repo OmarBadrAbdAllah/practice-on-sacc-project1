@@ -1,0 +1,135 @@
+.footer{
+background-color: #ddd;
+overflow: hidden;
+padding:10px;
+text-transform: capitalize;
+.gallery,.info,.contact{
+float: $float-l;
+
+}
+.sec-title{
+    color:#444;
+    font-weight: normal;
+}
+.gallery{
+   float: none;
+   
+    @media #{$min-small}{
+        width:100%;
+        float: $float-l;
+    }
+    @media #{$min-medium} {
+        overflow: hidden;
+        width: 50%;
+           
+        
+    }
+.img-box{
+    margin-bottom: 5px;
+    overflow: hidden;
+    img{
+
+width: 150px;
+height: 150px;
+      @media #{$min-small}{
+        
+            float: $float-l;
+         
+     }
+    }
+.text{
+@media #{$min-small} {
+    float: $float-l;
+margin-right:15px ;
+margin-left:15px;
+width: calc(100% - 180px);
+}
+h4{
+    color:$redColor;
+}
+p{
+    color:#888;
+    line-height: 1.9;
+}
+}
+}
+}
+.info{
+    overflow: hidden;
+    @media #{$max-mobile} {
+        float: none;
+        width: 100%;
+    }
+    @media #{$min-small} {
+        width: 50%;   
+       }
+       @media #{$min-medium} {
+           width:25%;
+       }
+    ul{
+        color: #888;
+        list-style: none;
+        line-height: 1.7;
+       @media #{$min-small} {
+         text-align: $text-l;
+       }
+        margin: 0;
+        padding: 0;
+       
+        span{
+            color: $redColor;
+        }
+    }
+    h4{
+        color: #888;
+        margin-bottom: 27px;
+        
+    }
+    p{
+        color: #888;
+    }
+}
+.contact{
+    @media #{$min-small} {
+        width: 50%;   
+       }
+       @media #{$min-medium} {
+           width:25%;
+       }
+    input[type='text'],
+    input[type='email'],
+    textarea{
+        text-transform: capitalize;
+        width:100%;
+        padding:15px;
+        margin: 5px;
+        border: 1px solid #888;
+        border-radius: 5px;
+    }
+    textarea{
+        height:120px;
+    }
+}
+.copy{
+    margin-top: 20px;
+    overflow: hidden;
+    border-top: 1px solid $grayColor;
+.co-text,.author{
+    text-align: center;
+    color: #888;
+   @media #{$min-medium} {
+    float:$float-l;
+    width:50%;
+    
+     padding:05px 15px;
+
+   }
+}
+.author{
+    @media #{$min-medium} {
+        text-align: $text-r;
+    }
+    }
+   
+}
+}

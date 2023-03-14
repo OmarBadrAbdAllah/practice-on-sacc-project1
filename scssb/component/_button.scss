@@ -1,0 +1,16 @@
+.main-button{
+    background-color: $redColor;
+    padding:10px 15px;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: capitalize;
+    min-width:120px;
+    opacity:.5;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    &:hover{
+        opacity:1;
+        @include transi
+    }
+}

@@ -1,0 +1,24 @@
+.cont{
+   
+    padding-left:15px;
+    padding-right: 15px;
+    margin:auto;
+    position: relative;
+ @media #{$min-small}{
+    width:750px
+ }
+ @media #{$min-medium}{
+    width:970px
+ }
+ @media #{$min-large}{
+    width:1170px
+ }
+}
+.clearfix{
+    clear: both;
+}
+.text-center{
+   @media #{$max-mobile} {
+      text-align: center;
+   }
+}
